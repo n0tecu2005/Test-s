@@ -1,35 +1,50 @@
-# make_readme.py
-# Erstellt eine README.md mit den vom Nutzer gewünschten Texten
-# Kodierung: UTF-8
+you wont to make your own lua config for FiveM comm in my discord server 
 
-import pathlib
 
-README_PATH = pathlib.Path("README.md")
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECU</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e1e1e, #3c3c3c);
+            font-family: 'Arial Black', sans-serif;
+        }
 
-# Der exakte Text, so wie vom Benutzer gewünscht
-content = """WHEN YOU WONT TO FIVEM CHEAT HIT ME PER DM
-and if you interestet if making own discord bot then text kme
-made by ecu
-"""
+        h1 {
+            font-size: 15vw; /* Sehr große Schrift */
+            color: #ffcc00;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ECU</h1>
 
-def create_readme(path: pathlib.Path, text: str) -> None:
-    """
-    Schreibt die README.md (überschreibt, falls sie schon existiert).
-    """
-    path.write_text(text, encoding="utf-8")
-    print(f"README.md wurde erstellt/überschrieben: {path.resolve()}")
+    <script>
+        // Optional: kleine Animation, z.B. leichtes Pulsieren
+        const title = document.querySelector('h1');
+        let growing = true;
 
-def print_text(text: str) -> None:
-    """
-    Gibt den Text auf der Konsole aus.
-    """
-    print("---- Inhalt ----")
-    print(text)
-    print("---- Ende ----")
-
-def main():
-    create_readme(README_PATH, content)
-    print_text(content)
-
-if __name__ == "__main__":
-    main()
+        setInterval(() => {
+            let currentSize = parseFloat(getComputedStyle(title).fontSize);
+            if (growing) {
+                currentSize += 1;
+                if (currentSize >= window.innerWidth * 0.15) growing = false;
+            } else {
+                currentSize -= 1;
+                if (currentSize <= window.innerWidth * 0.14) growing = true;
+            }
+            title.style.fontSize = currentSize + 'px';
+        }, 100);
+    </script>
+</body>
+</html>
