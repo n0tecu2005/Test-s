@@ -1,4 +1,6 @@
-you wont to make your own lua config for FiveM comm in my discord server 
+why choose us?
+
+we have the best FiveM ready accounts unused and instat delivery 🚀
 
 
-
+https://discord.gg/FBZgkrEB here is our discord server
